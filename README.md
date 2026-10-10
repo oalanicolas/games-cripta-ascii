@@ -6,6 +6,8 @@ O visual aproxima as referências com glifos nas superfícies e modelos próprio
 
 ## Jogar
 
+[Jogar em ascii.rabisco.net](https://ascii.rabisco.net/).
+
 No workspace Games, da raiz: `python3 framework/scripts/game.py serve prototypes/cripta-ascii`. Em checkout independente: `npm ci` e `npm run serve`.
 
 WASD/setas para mover, mouse para mirar, clique/J para fogo, Q para explosão de luz, espaço para esquiva, H para poção, E para interagir, Esc para pausa. R recomeça a expedição. Roda do mouse aproxima a câmera. No toque, joystick e botões com mira automática no inimigo próximo.
@@ -17,6 +19,10 @@ Encontre o círculo luminoso diante do arco para descer. Na cripta, derrote os g
 `npm test` verifica regras; `npm run doctor` confere módulos e sons; `npm run build` gera `dist/` com Three.js e mídia local, sem CDN. `node tools/qa-campaign.mjs URL` percorre a campanha por teclado e mouse em Chrome headless com Metal. Requer Playwright do workspace para QA; o jogo e o build não dependem dele.
 
 Resultados em `output/qa/`, ignorados. Capturas temporárias são apagadas após comparação; recibos JSON permanecem. Não foi testado em aparelho móvel físico. Não há aprovação artística humana registrada.
+
+## Publicar
+
+Destino: `ascii.rabisco.net`, Hostinger. No hub: `python3 framework/scripts/gameops.py deploy cripta-ascii`. O fluxo exige o commit em `origin/main`, constrói uma cópia limpa, executa os validadores e confere os arquivos servidos. O `.htaccess` gerado de `vercel.json` exige revalidação dos arquivos com nomes estáveis.
 
 ## Créditos
 
