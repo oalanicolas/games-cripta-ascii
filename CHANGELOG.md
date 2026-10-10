@@ -4,6 +4,7 @@
 
 - Publicação da campanha em `https://ascii.rabisco.net/`, em build estático na Hostinger.
 - Cache com revalidação para recursos de nomes estáveis e GTM do estúdio na página pública.
+- Cabeçalhos de erro no escopo de diretório do LiteSpeed: bloqueios de bots com `no-store` e `Vary: User-Agent`.
 
 ## 09/10/2026
 

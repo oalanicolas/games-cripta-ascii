@@ -2,7 +2,7 @@ import { mkdir, cp, readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
 await mkdir('dist', { recursive: true });
-for (const name of ['index.html', 'style.css', 'src', 'assets']) await cp(name, `dist/${name}`, { recursive: true });
+for (const name of ['index.html', 'style.css', 'src', 'assets', '.htaccess']) await cp(name, `dist/${name}`, { recursive: true });
 await mkdir('dist/vendor', { recursive: true });
 for (const name of ['three.module.js', 'three.core.js']) await cp(`node_modules/three/build/${name}`, `dist/vendor/${name}`);
 await cp('node_modules/three/LICENSE', 'dist/vendor/LICENSE');

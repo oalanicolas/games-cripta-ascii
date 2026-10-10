@@ -22,7 +22,7 @@ Resultados em `output/qa/`, ignorados. Capturas temporárias são apagadas após
 
 ## Publicar
 
-Destino: `ascii.rabisco.net`, Hostinger. No hub: `python3 framework/scripts/gameops.py deploy cripta-ascii`. O fluxo exige o commit em `origin/main`, constrói uma cópia limpa, executa os validadores e confere os arquivos servidos. O `.htaccess` gerado de `vercel.json` exige revalidação dos arquivos com nomes estáveis.
+Destino: `ascii.rabisco.net`, Hostinger. No hub: `python3 framework/scripts/gameops.py deploy cripta-ascii`. O fluxo exige o commit em `origin/main`, constrói uma cópia limpa, executa os validadores e confere os arquivos servidos. O `.htaccess` do módulo exige revalidação dos arquivos com nomes estáveis e cobre cabeçalhos de erro do LiteSpeed. O publicador acrescenta bloqueios de bots e `robots.txt`.
 
 ## Créditos
 

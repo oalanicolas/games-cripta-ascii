@@ -1,0 +1,16 @@
+Options -Indexes
+AddDefaultCharset utf-8
+AddType text/javascript .js .mjs
+AddType audio/ogg .ogg
+AddType text/markdown .md
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always merge Vary "User-Agent"
+  Header always set Cache-Control "no-store" env=BLOCK_AI
+  Header always set Cache-Control "no-store" env=REDIRECT_BLOCK_AI
+  <FilesMatch ".*">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
