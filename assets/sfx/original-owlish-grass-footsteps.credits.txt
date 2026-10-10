@@ -1,0 +1,11 @@
+Áudio — acervo compartilhado Games
+
+Incorporar os créditos CC BY à tela/página de créditos do jogo.
+A exportação preserva os bytes disponíveis, sem processamento adicional.
+
+Caminhada na grama (original-owlish-grass-footsteps.wav)
+  Owlish Media Sound Effects — Footsteps/grass_footsteps.wav — OwlishMedia
+  https://opengameart.org/content/sound-effects-pack
+  CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+  Processamento herdado: Original do pacote, preservado byte a byte. Sem cortes, normalização, redução de ruído ou nova compressão.
+

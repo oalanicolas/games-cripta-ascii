@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090a13">
+  <title>Cripta ASCII</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+</head>
+<body>
+  <canvas id="world" aria-label="Mundo da Cripta ASCII" tabindex="0"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <header id="hud" hidden>
+    <div class="identity"><span class="sigil">✦</span><div><strong>Peregrino</strong><small id="zone-label">Ruínas da Cinza</small></div></div>
+    <div class="vitals"><label>Vida <span id="hp-text">100</span></label><div class="bar"><i id="hp"></i></div><label>Luz <span id="mana-text">100</span></label><div class="bar light"><i id="mana"></i></div></div>
+    <div class="quest"><small id="quest-kicker">A PRIMEIRA DESCIDA</small><span id="quest">Encontre a entrada da cripta</span><div id="seal-count">◇ ◇ ◇</div></div>
+    <button id="pause-button" aria-label="Pausar">Ⅱ</button>
+  </header>
+  <div id="boss-bar" hidden><small>GUARDIÃO DA CINZA</small><div class="bar boss"><i id="boss-hp"></i></div><span id="boss-phase"></span></div>
+  <div id="labels" aria-hidden="true"></div>
+  <div id="damage" aria-hidden="true"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="interact" hidden></div>
+  <footer id="controls" hidden>
+    <span><kbd>W A S D</kbd> mover</span><span><kbd>clique</kbd> fogo</span><span><kbd>Q</kbd> <b id="burst-status">explosão</b></span><span><kbd>espaço</kbd> esquiva</span><span><kbd>H</kbd> <b id="potion-count">5 poções</b></span><span><kbd>E</kbd> interagir</span>
+  </footer>
+  <div id="touch" hidden>
+    <div id="stick"><div id="stick-knob"></div></div>
+    <div class="touch-actions"><button data-action="interact" aria-label="Interagir">E</button><button data-action="heal" aria-label="Curar">+</button><button data-action="burst" aria-label="Explosão">Q</button><button data-action="dodge" aria-label="Esquivar">↗</button><button data-action="fire" aria-label="Atirar" class="touch-fire">✦</button></div>
+  </div>
+  <section id="title-screen" class="overlay title-overlay">
+    <div class="title-card"><div class="eyebrow">UMA EXPEDIÇÃO ENTRE CARACTERES</div><h1>CRIPTA<br><span>ASCII</span></h1><div class="divider">— ✦ —</div><p>A chuva guarda as ruínas.<br>A luz revela o que vive abaixo.</p><button id="start-button" class="primary">Acender a tocha <span>↗</span></button><button id="continue-button" hidden>Continuar expedição</button><small class="title-note">Explore a cripta. Reúna os três selos.<br>Enfrente o guardião da cinza.</small></div>
+    <div class="reference-note">PROTÓTIPO SOLO · inspirado nos vídeos de Ansenjeo</div>
+  </section>
+  <section id="pause-screen" class="overlay modal-overlay" hidden>
+    <div class="modal"><div class="eyebrow">A TOCHA ESPERA</div><h2>Pausa</h2><button id="resume-button" class="primary">Voltar à expedição</button><label class="option"><input id="mute" type="checkbox"> Silenciar áudio</label><label class="option"><input id="reduced-motion" type="checkbox"> Reduzir movimento e relâmpagos</label><p class="help">WASD ou setas · mouse para mirar · clique/J para fogo · Q para explosão · espaço para esquiva · H para poção · E para interagir · roda para aproximar.</p><button id="restart-button">Recomeçar expedição</button></div>
+  </section>
+  <section id="end-screen" class="overlay modal-overlay" hidden><div class="modal"><div id="end-kicker" class="eyebrow"></div><h2 id="end-title"></h2><p id="end-copy"></p><button id="end-button" class="primary"></button><button id="new-button">Nova expedição</button></div></section>
+  <div id="loading">Preparando a tocha…</div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Áudio — acervo compartilhado Games
+
+Incorporar os créditos CC BY à tela/página de créditos do jogo.
+A exportação preserva os bytes disponíveis, sem processamento adicional.
+
+Trovão 01 (rubberduck-sfx2-sfx100v2-thunder-01.ogg)
+  100 CC0 SFX #2 — rubberduck
+  https://opengameart.org/content/100-cc0-sfx-2
+  CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+  Processamento herdado: Arquivo completo como distribuído pelo autor; bytes preservados, sem cortes, normalização, mudança de canais ou reencodificação nesta importação. Pacote de efeitos desenhados/editados; não pressupõe captação acústica pura.
+

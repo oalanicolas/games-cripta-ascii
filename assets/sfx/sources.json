@@ -1,0 +1,217 @@
+{
+  "files": [
+    {
+      "id": "ylmir-rain-1",
+      "title": "Chuva em loop · 1",
+      "category": "Clima",
+      "tags": [
+        "chuva",
+        "rain",
+        "loop",
+        "janela",
+        "Rain (loopable)",
+        "Ylmir"
+      ],
+      "sources": [
+        {
+          "title": "Rain (loopable)",
+          "author": "Ylmir",
+          "url": "https://opengameart.org/content/rain-loopable",
+          "license": "CC0-1.0",
+          "download_url": "https://opengameart.org/sites/default/files/Rain%20OGG.zip",
+          "archive_sha256": "e68f3e1c77493cf43bec84cebff5043bff6be9ce16d59b24caa988cd460aa75b",
+          "member": "1.ogg",
+          "checked_on": "2026-09-08"
+        }
+      ],
+      "style": "recorded",
+      "processing": "Arquivo completo como distribuído pelo autor; bytes preservados, sem cortes, normalização, mudança de canais ou reencodificação nesta importação. Captação mono à janela; expansão estéreo pelo autor. Escolhido somente OGG para evitar duas codificações da mesma tomada.",
+      "edition": "original",
+      "sha256": "4f659f68cf5219007d0bb0969a1862491ceee4057fda4c491c6001e8608fa2cb",
+      "bytes": 550049,
+      "review": "Triagem documental e técnica; ouvir no contexto do jogo",
+      "src": "ylmir-rain-1.ogg",
+      "key": "ylmir-rain-1",
+      "from_catalog": "shared/sfx",
+      "author": "Ylmir",
+      "license": "CC0-1.0",
+      "origin": "https://opengameart.org/content/rain-loopable"
+    },
+    {
+      "id": "original-sword-sword-1",
+      "title": "Espada · ataque 1",
+      "category": "Lâminas",
+      "tags": [
+        "espada",
+        "lâmina",
+        "sword",
+        "ataque"
+      ],
+      "sources": [
+        {
+          "title": "20 Sword Sound Effects (Attacks and Clashes)",
+          "author": "StarNinjas",
+          "url": "https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes",
+          "license": "CC0-1.0",
+          "archive_sha256": "87a1fe1cfeee5f282fe06a7a9c25ab9ebf24b7674fe19171b7f2762dffb628c1",
+          "member": "sword - StarNinjas/sword.1.ogg"
+        }
+      ],
+      "style": "recorded",
+      "processing": "Arquivo completo como distribuído pelo autor; bytes preservados, sem cortes, normalização, mudança de canais ou reencodificação nesta importação.",
+      "edition": "original",
+      "sha256": "4a3e80705619cbd7500682ab51004011ddf67e14ccf1818ceb9e5b539fe42b75",
+      "bytes": 17794,
+      "review": "Triagem documental e técnica; ouvir no contexto do jogo",
+      "src": "original-sword-sword-1.ogg",
+      "key": "original-sword-sword-1",
+      "from_catalog": "shared/sfx",
+      "author": "StarNinjas",
+      "license": "CC0-1.0",
+      "origin": "https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes"
+    },
+    {
+      "id": "original-sword-sword-clash-1",
+      "title": "Espada · choque 1",
+      "category": "Lâminas",
+      "tags": [
+        "espada",
+        "lâmina",
+        "sword",
+        "choque"
+      ],
+      "sources": [
+        {
+          "title": "20 Sword Sound Effects (Attacks and Clashes)",
+          "author": "StarNinjas",
+          "url": "https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes",
+          "license": "CC0-1.0",
+          "archive_sha256": "f363c80ea1627548d336370750651b0d2d092978148ecfb3642717c2efb54b6b",
+          "member": "sword_clash.1.ogg"
+        }
+      ],
+      "style": "recorded",
+      "processing": "Arquivo completo como distribuído pelo autor; bytes preservados, sem cortes, normalização, mudança de canais ou reencodificação nesta importação.",
+      "edition": "original",
+      "sha256": "5c5e78e466ba78fe2414f2b7a2a6eb674822ccfc8a8bc9fda32be22f5dde5e69",
+      "bytes": 16491,
+      "review": "Triagem documental e técnica; ouvir no contexto do jogo",
+      "src": "original-sword-sword-clash-1.ogg",
+      "key": "original-sword-sword-clash-1",
+      "from_catalog": "shared/sfx",
+      "author": "StarNinjas",
+      "license": "CC0-1.0",
+      "origin": "https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes"
+    },
+    {
+      "id": "original-swish-1",
+      "title": "Movimento no ar · swish 1",
+      "category": "Movimento",
+      "tags": [
+        "movimento",
+        "ar",
+        "swish",
+        "whoosh"
+      ],
+      "sources": [
+        {
+          "title": "Swishes Sound Pack",
+          "author": "artisticdude",
+          "url": "https://opengameart.org/content/swishes-sound-pack",
+          "license": "CC0-1.0",
+          "archive_sha256": "7980215241b739a787dcf26f660ce510bb237900968789395a86911619795693",
+          "member": "swishes/swish-1.wav"
+        }
+      ],
+      "style": "recorded",
+      "processing": "Arquivo completo como distribuído pelo autor; bytes preservados, sem cortes, normalização, mudança de canais ou reencodificação nesta importação.",
+      "edition": "original",
+      "sha256": "9a15c881345c1ce1c39cc31f52f081c8c4dc81fa41111e0079400f39d3ba0e45",
+      "bytes": 34138,
+      "review": "Triagem documental e técnica; ouvir no contexto do jogo",
+      "src": "original-swish-1.wav",
+      "key": "original-swish-1",
+      "from_catalog": "shared/sfx",
+      "author": "artisticdude",
+      "license": "CC0-1.0",
+      "origin": "https://opengameart.org/content/swishes-sound-pack"
+    },
+    {
+      "id": "rubberduck-sfx2-sfx100v2-thunder-01",
+      "title": "Trovão 01",
+      "category": "Clima",
+      "tags": [
+        "thunder",
+        "Trovão",
+        "Clima",
+        "thunder",
+        "100 CC0 SFX #2",
+        "rubberduck"
+      ],
+      "sources": [
+        {
+          "title": "100 CC0 SFX #2",
+          "author": "rubberduck",
+          "url": "https://opengameart.org/content/100-cc0-sfx-2",
+          "license": "CC0-1.0",
+          "download_url": "https://opengameart.org/sites/default/files/sfx_100_v2.zip",
+          "archive_sha256": "0fc61b4494e2e893c0c015ced4877b3f689c7d84a48cb61daecd7ddb52db797b",
+          "member": "sfx100v2_thunder_01.ogg",
+          "checked_on": "2026-09-08"
+        }
+      ],
+      "style": "designed-modern",
+      "processing": "Arquivo completo como distribuído pelo autor; bytes preservados, sem cortes, normalização, mudança de canais ou reencodificação nesta importação. Pacote de efeitos desenhados/editados; não pressupõe captação acústica pura.",
+      "edition": "original",
+      "sha256": "8a4f1dee999546b363f989eff92174375eeae7c241dc9beaa0892fb131ef12a9",
+      "bytes": 51493,
+      "review": "Triagem documental e técnica; ouvir no contexto do jogo",
+      "src": "rubberduck-sfx2-sfx100v2-thunder-01.ogg",
+      "key": "rubberduck-sfx2-sfx100v2-thunder-01",
+      "from_catalog": "shared/sfx",
+      "author": "rubberduck",
+      "license": "CC0-1.0",
+      "origin": "https://opengameart.org/content/100-cc0-sfx-2"
+    },
+    {
+      "id": "original-owlish-grass-footsteps",
+      "title": "Caminhada na grama",
+      "category": "Passos",
+      "tags": [
+        "Passos",
+        "Caminhada na grama",
+        "grass_footsteps",
+        "original",
+        "gravação",
+        "foley",
+        "passos",
+        "caminhar",
+        "pé",
+        "chão"
+      ],
+      "style": "recorded",
+      "edition": "original",
+      "sources": [
+        {
+          "title": "Owlish Media Sound Effects — Footsteps/grass_footsteps.wav",
+          "author": "OwlishMedia",
+          "url": "https://opengameart.org/content/sound-effects-pack",
+          "license": "CC0-1.0",
+          "archive": "Owlish Media Sound Effects.zip",
+          "archive_sha256": "57d7059fe2c0ea5f47c7554ace22a538ea22ab40bfc0906b71aa259afffd3d18",
+          "archive_member": "Footsteps/grass_footsteps.wav"
+        }
+      ],
+      "processing": "Original do pacote, preservado byte a byte. Sem cortes, normalização, redução de ruído ou nova compressão.",
+      "sha256": "9f9eae74f224795725bc12a08dea33e2006cb3082c44ba7326618d75aaca201a",
+      "bytes": 669876,
+      "review": "Triagem documental e técnica; ouvir no contexto do jogo",
+      "src": "original-owlish-grass-footsteps.wav",
+      "key": "original-owlish-grass-footsteps",
+      "from_catalog": "shared/sfx",
+      "author": "OwlishMedia",
+      "license": "CC0-1.0",
+      "origin": "https://opengameart.org/content/sound-effects-pack"
+    }
+  ]
+}

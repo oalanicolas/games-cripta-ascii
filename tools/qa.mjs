@@ -1,0 +1,22 @@
+import { chromium } from '../../../libraries/metal-assault/lab/node_modules/playwright/index.mjs';
+import { mkdir, writeFile } from 'node:fs/promises';
+
+const url = process.argv[2];
+if (!url) throw new Error('Informe a URL servida pelo harness.');
+const output = new URL('../output/qa/', import.meta.url); await mkdir(output, { recursive: true });
+const browser = await chromium.launch({ channel: 'chrome', headless: process.env.QA_HEADED !== '1', args: ['--use-angle=metal', '--ignore-gpu-blocklist'] });
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+const errors = [], failures = [];
+page.on('pageerror', e => errors.push(e.message));
+page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+page.on('response', r => { if (r.status() >= 400) failures.push({ url: r.url(), status: r.status() }); });
+await page.goto(url); await page.waitForFunction(() => window.__game);
+await page.screenshot({ path: new URL('title.png', output).pathname });
+await page.getByRole('button', { name: 'Acender a tocha' }).click();
+await page.waitForTimeout(1200);
+await page.screenshot({ path: new URL('outdoor.png', output).pathname });
+const result = { url, errors, failures, state: await page.evaluate(() => window.__game.observe()), info: await page.evaluate(() => window.__game.info()) };
+await writeFile(new URL('initial.json', output), JSON.stringify(result, null, 2));
+console.log(JSON.stringify({ errors, failures, info: result.info, screenshot: new URL('outdoor.png', output).pathname }, null, 2));
+await browser.close();
+if (errors.length || failures.length) process.exitCode = 1;
